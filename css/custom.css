@@ -1,0 +1,81 @@
+.color1{
+    background-color: #28abb9;
+}
+.color2{
+    background-color: #2d6187;
+}
+.color3{
+    background-color: #effad3;
+}
+.color4{
+    background-color: #a8dda8;
+}
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+    display: none;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    
+  }
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #dc3545;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    position: fixed;
+    z-index: 100;
+    right: 50%;
+    left: 45%;
+    top: 50%;
+    bottom: 0;
+    display: block;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.notification{
+    padding-top: 10px !important;
+}
+@media screen and  (max-width: 450px) { 
+  .loader{
+    left: 34%;
+  }
+  h2{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 13px;
+  }
+  h4{
+    font-size: 18px;
+  }
+  h5{
+    font-size: 13px;
+  }
+}
